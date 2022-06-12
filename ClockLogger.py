@@ -18,6 +18,7 @@ class LoggerClock(QWidget):
         super().__init__()
         self.time = None
         self.setWindowTitle("Log 'o Clock")
+        self.resize(0,0)
 
         layout = QGridLayout() # QVBoxLayout()
 

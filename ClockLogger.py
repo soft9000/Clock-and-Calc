@@ -19,6 +19,7 @@ class LoggerClock(QWidget):
         self.time = None
         self.setWindowTitle("Log 'o Clock")
         self.resize(0,0)
+        self.setStyleSheet("background-color: Gold")
 
         layout = QGridLayout() # QVBoxLayout()
 
@@ -30,11 +31,11 @@ class LoggerClock(QWidget):
         self.lblDateDisplay = QLabel()
         self.lblDateDisplay.setAlignment(Qt.AlignCenter)
         self.lblDateDisplay.setFont( QFont('Open Sans', 12))
-        self.lblDateDisplay.setStyleSheet('Color: Blue')
+        self.lblDateDisplay.setStyleSheet('Color: Gold;background-color: Black')
 
         self.btnLog = QPushButton('Note')
         self.btnLog.setFont( QFont('Open Sans', 14))
-        self.btnLog.setStyleSheet('Color: Blue')
+        self.btnLog.setStyleSheet('Color: Blue;background-color: White')
         self.btnLog.clicked.connect(self.doLog)
 
         layout.addWidget(self.lblDateDisplay,1,0)

@@ -22,6 +22,11 @@ Notes: The above `ClockLogger`:
 * The default log file is pw-day date-named.
 * Log files are suffixed with a `.zlog` to help with aggregation(s.)
 
+Notes: The `ClockLogger6`:
+* Uses Qt5 (`pip3 install PyQt6`)
+* Demonstrates why PyQt6 is easier, yet breaks PyQt5.
+* Font-mapper carps a lot on macOS!
+
 -- Enjoy!
 
 
